@@ -1,8 +1,11 @@
 #ERIC
+
 Step 1 Install Flask using pip install Flask command
-Step 2  Create a Flask App 
- create a file named app.py and define your Flask application
- from flask import Flask
+
+Step 2  Create a Flask App
+create a file named app.py and define your Flask application
+
+from flask import Flask
 
 app = Flask(_name_)
 
@@ -12,9 +15,13 @@ def hello():
 
 if _name_ == '_main_':
     app.run()
+
 Step 3 Run The Flask App using python app.py command
+
 step 4 create a test directory
+
 step 5 create a test Python file test_app.py
+
 import unittest
 from app import app
 
@@ -36,7 +43,9 @@ if _name_ == '_main_':
     unittest.main()
 
 step 6 Run the tests using python -m unittest discover tests
+
 step 7 create a workflow file .github/workflow/ci-cd.yml
+
 name: CI/CD Pipeline
 
 on:
@@ -72,8 +81,10 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: ericwebapp
           heroku_email: omkar.rohokale5328@gmail.com
+
 step 8 set up Heroku
 Generate API key on Heroku and add it as a secret in your Github Repository with the name HEROKU_API_KEY
+
 step 9 commit chabges into github repository
 
 Adiitional notes
