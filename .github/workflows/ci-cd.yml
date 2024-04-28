@@ -32,4 +32,4 @@ jobs:
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: ericwebapp
-          heroku_email:omkar.rohokale5328@gmail.com
+          heroku_email: omkar.rohokale5328@gmail.com
